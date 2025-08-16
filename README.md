@@ -68,8 +68,7 @@ NeoScreenBot/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo/NeoScreenBot.git
-   cd NeoScreenBot
+gh repo clone rezaHaj/Alborz_AI_project3rdphase_Reza_Hg
    ```
 2. Install requirements:
 
