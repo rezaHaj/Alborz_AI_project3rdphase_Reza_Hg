@@ -122,5 +122,3 @@ NeoScreenBot/
 📌 *NeoScreenBot = Fast, Accurate, Life-Saving Decisions for Newborns*
 
 ---
-
-می‌خوای برات این README رو همون‌جوری Markdown آماده کنم (یعنی فایل `README.md` بسازم که مستقیم بندازی تو گیت و درست رندر بشه)، یا فقط متنش کافیه؟
