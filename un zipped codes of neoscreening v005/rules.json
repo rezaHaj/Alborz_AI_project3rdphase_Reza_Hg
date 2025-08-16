@@ -1,0 +1,76 @@
+{
+  "shared": {
+    "sampling_days": {
+      "recommended_min": 3,
+      "recommended_max": 5,
+      "window_max": 5
+    },
+    "gestational_age": {
+      "term_min_weeks": 37
+    },
+    "birth_weight": {
+      "lbw_g": 2500,
+      "vlbw_g": 1500,
+      "macrosomia_g": 4000
+    },
+    "special_cases": {
+      "nicu": "NICU admission: schedule rescreen at 3–5 and 8–14 days as applicable.",
+      "transfusion": "History of transfusion: rescreen 48–72h after transfusion.",
+      "drugs": "Interfering medications (e.g., dopamine, corticosteroids): rescreen per protocol.",
+      "dialysis": "Dialysis: rescreen 48–72h post-procedure."
+    }
+  },
+  "CH": {
+    "units": "mU/L",
+    "thresholds": {
+      "exit_if_tsh_lt": 5.0,
+      "repeat_low": 5.0,
+      "repeat_high": 9.9,
+      "serum_low": 10.0,
+      "serum_high": 19.9,
+      "urgent_if_tsh_ge": 20.0
+    },
+    "messages": {
+      "normal": "TSH < 5 mU/L → Screening result is **normal**. No further action.",
+      "repeat": "TSH 5–9.9 mU/L → **Repeat screening** in ~1 week (same method).",
+      "serum": "TSH 10–19.9 mU/L → **Serum confirmatory testing** required.",
+      "urgent": "TSH ≥ 20 mU/L → **Urgent referral** and **immediate treatment** per protocol."
+    },
+    "special_cases": {
+      "preterm": "Preterm infant: schedule rescreening at 2, 6, and 10 weeks of age.",
+      "vlbw": "Very low birth weight (<1500 g): rescreening is required.",
+      "lbw": "Low birth weight (<2500 g): rescreening is recommended.",
+      "macrosomia": "Macrosomic infant (>4000 g): consider rescreening."
+    }
+  },
+  "PKU": {
+    "units": "mg/dL",
+    "dbs_threshold": 4.0,
+    "messages": {
+      "dbs_normal": "DBS Phe < 4 mg/dL → **Normal** screening.",
+      "dbs_to_hplc": "DBS Phe ≥ 4 mg/dL → **Confirmatory HPLC** required (no diet change before test)."
+    },
+    "hplc_thresholds": {
+      "observe_low": 4.0,
+      "observe_high": 6.9,
+      "repeat_low": 7.0,
+      "repeat_high": 9.9,
+      "treat_if_ge": 10.0
+    },
+    "hplc_messages": {
+      "observe": "HPLC 4–6.9 mg/dL → **Hospital observation** (no diet change).",
+      "repeat": "HPLC 7–9.9 mg/dL → **Repeat HPLC** in 1 week (no diet change).",
+      "treat": "HPLC ≥ 10 mg/dL → **Start treatment** and **family education**."
+    },
+    "special_cases": {
+      "preterm": "Preterm infant: consider rescreen at ~28 days (per local protocol).",
+      "vlbw": "Very low birth weight (<1500 g): rescreening is recommended.",
+      "lbw": "Low birth weight (<2500 g): rescreening is recommended.",
+      "macrosomia": "Macrosomic infant (>4000 g): consider rescreening.",
+      "nicu": "NICU admission: repeat screening at 8–14 days as applicable.",
+      "transfusion": "Transfusion history: repeat screening 48–72h after transfusion.",
+      "drugs": "Interfering medications: rescreen per protocol.",
+      "dialysis": "Dialysis: rescreen 48–72h post-procedure."
+    }
+  }
+}
